@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            color: green;
+            display: flex;
+            justify-content: center;
+        }
+ 
+        #mybutton {
+            display: block;
+            margin: 0 auto;
+            padding-bottom: 15px;
+            padding-top: 10px;
+            padding-right: 5px;
+
+            
+        }
+ 
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            padding-top: 5px;
+            padding-bottom: 100px;
+            padding-left: 100px;
+        }
+    </style>
+</head>
+<body style="background-color: aquamarine;">
+    <h1>
+        O(1) SDE INTERNSHHIP
+    </h1>
+    <img src="./WhatsApp Image 2023-08-22 at 19.02.48.jpg"
+    <div id="innerdiv"></div>
+    <button onclick="mybutton()" id="mybutton">Click Me</button>
+    <script>
+         function mybutton() {
+             const para = document.createElement("div");
+             para.innerText = "O(1) SDE Internship";
+             document.body.appendChild(para);
+            }
+    </script>
+</body>
+</html>
